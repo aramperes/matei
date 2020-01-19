@@ -1,13 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b1531308-cceb-4ad4-b50c-08453fda8d10" name="Default Changelist" comment="" />
+    <list default="true" id="b1531308-cceb-4ad4-b50c-08453fda8d10" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Components/AboutPage/Matei-Large.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/AboutPage/Matei-Small.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutPage/AboutPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutPage/AboutPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutPage/AboutPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutPage/AboutPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Footer/Footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer/Footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Footer/Twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer/Twitter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopBar/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopBar/Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/TopBar/TopBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TopBar/TopBar.scss" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1WaxOI1NLW3WdRPu1M5Y0wv3J7Y" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,8 +29,26 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\dev\matei\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\matei" />
+      <recent name="C:\dev\matei\src\Components" />
+      <recent name="C:\dev\matei\src\Components\HomePage" />
+      <recent name="C:\dev\matei\src\Components\TopBar" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\matei\src\Components\Footer" />
+      <recent name="C:\dev\matei\src\Components\TopBar" />
+      <recent name="C:\dev\matei\src\Components\AboutPage" />
+      <recent name="C:\dev\matei\src\Components\HomePage" />
+      <recent name="C:\dev\matei\src\Components\Canada" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -40,11 +72,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579401472598</updated>
-      <workItem from="1579401478348" duration="305000" />
+      <workItem from="1579401478348" duration="13823000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1230" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1579457810777">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1230" y="274" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1579457810777" />
+    <state x="-1253" y="286" width="709" height="536" key="find.popup" timestamp="1579455654912">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1253" y="286" width="709" height="536" key="find.popup/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1579455654912" />
   </component>
 </project>
