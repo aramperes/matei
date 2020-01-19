@@ -1,0 +1,16 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,500,700|Josefin+Sans&display=swap');
+
+body {
+  margin: 0;
+  font-family: $default-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
+  background-color: $background;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+}

@@ -1,0 +1,46 @@
+@import "../../variables";
+
+.Footer {
+  width: 100%;
+
+  .FooterContainer {
+    max-width: 1500px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 50px 50px 50px;
+    align-items: center;
+
+
+    @media only screen and (max-width: 750px) {
+    padding: 0 20px 30px 20px;
+    }
+  }
+
+  .EmailParent {
+    flex-grow: 1;
+
+    .EmailTitle {
+      color: #B8B8B8;
+      font-weight: 500;
+    }
+
+    .Email {
+      font-weight: 500;
+    }
+  }
+
+  .SocialParent {
+    display: flex;
+
+    .Twitter {
+      display: block;
+      margin-top: 20px;
+    }
+
+    .Dribble {
+      display: block;
+      margin-top: 20px;
+      margin-left: 40px;
+    }
+  }
+}
