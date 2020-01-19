@@ -36,8 +36,7 @@ frontend:deploy:
   image: lwolf/helm-kubectl-docker:v1.15.4-v2.14.3
   script:
     - mkdir -p ${KUBECONFIG_PARENT}
-    - echo ${WAVY_CLUSTER_CONFIG} | base64 -d > ${KUBECONFIG}
-    - cat ${KUBECONFIG}
+    - echo ${K8S_CLUSTER_CONFIG} | base64 -d > ${KUBECONFIG}
 
     # Deploy using helm chart
     - helm upgrade --install --force --namespace ${DEPLOY_NAMESPACE} --set image.name=${IMAGE},image.tag=${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA} matei ./chart
