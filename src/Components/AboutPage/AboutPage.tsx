@@ -9,6 +9,8 @@ export default class AboutPage extends React.Component<any> {
     private workRef: React.RefObject<HTMLDivElement>;
     private hasScrolled: boolean = false;
 
+    private gradient: React.RefObject<HTMLImageElement>;
+
     constructor(props: Readonly<any>) {
         super(props);
 
@@ -16,6 +18,7 @@ export default class AboutPage extends React.Component<any> {
 
         this.educationRef = React.createRef();
         this.workRef = React.createRef();
+        this.gradient = React.createRef();
     }
 
     render() {
@@ -36,7 +39,7 @@ export default class AboutPage extends React.Component<any> {
                                 create content that influences daily life.
                             </div>
                         </div>
-                        <img src={MateiLarge} className={"MateiLarge"} alt={"Matei"}/>
+                        <img src={MateiLarge} className={"MateiLarge"} alt={"Matei"} ref={this.gradient}/>
                         <img src={MateiSmall} className={"MateiSmall"} alt={"Matei"}/>
                     </div>
                     <div className={"Resume"}>
@@ -101,6 +104,13 @@ export default class AboutPage extends React.Component<any> {
             this.hasScrolled = true;
             this.educationRef.current.classList.add("Visible");
             this.workRef.current.classList.add("Visible");
+        }
+        if (this.gradient && this.gradient.current) {
+            const blueness = Math.min(100, window.scrollY / 5);
+            console.log(blueness);
+            this.gradient.current.style.background = "linear-gradient(170deg, #8AB4CC " + blueness + "%, rgba(206, 103, 255, 0.5) 100%)";
+            this.gradient.current.style.backgroundSize = "92% 95%";
+            this.gradient.current.style.backgroundRepeat = "no-repeat";
         }
     }
 }
