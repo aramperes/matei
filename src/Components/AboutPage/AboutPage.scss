@@ -112,6 +112,21 @@
         }
       }
 
+      @media only screen and (min-width: 750px) {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-in, transform 0.5s ease;
+
+        &:last-of-type {
+          transition-delay: 0.25s;
+        }
+      }
+
+      &.Visible {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+
       .Title {
         font-weight: 500;
         font-size: 28px;

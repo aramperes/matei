@@ -3,7 +3,21 @@ import "./AboutPage.scss";
 import MateiLarge from "./Matei-Large.png";
 import MateiSmall from "./Matei-Small.png";
 
-export default class AboutPage extends React.Component {
+export default class AboutPage extends React.Component<any> {
+
+    private educationRef: React.RefObject<HTMLDivElement>;
+    private workRef: React.RefObject<HTMLDivElement>;
+    private hasScrolled: boolean = false;
+
+    constructor(props: Readonly<any>) {
+        super(props);
+
+        this.onScroll = this.onScroll.bind(this);
+
+        this.educationRef = React.createRef();
+        this.workRef = React.createRef();
+    }
+
     render() {
         return (
             <div className={"AboutPage"}>
@@ -26,7 +40,7 @@ export default class AboutPage extends React.Component {
                         <img src={MateiSmall} className={"MateiSmall"} alt={"Matei"}/>
                     </div>
                     <div className={"Resume"}>
-                        <div className={"Section"}>
+                        <div className={"Section"} ref={this.educationRef}>
                             <div className={"Title"}>Education</div>
                             <div className={"Item"}>
                                 <div className={"Date"}>2017 - 2019</div>
@@ -43,7 +57,7 @@ export default class AboutPage extends React.Component {
                                 </div>
                             </div>
                         </div>
-                        <div className={"Section"}>
+                        <div className={"Section"} ref={this.workRef}>
                             <div className={"Title"}>Work Experience</div>
                             <div className={"Item"}>
                                 <div className={"Date"}>2018 - 2020</div>
@@ -71,5 +85,22 @@ export default class AboutPage extends React.Component {
                 </div>
             </div>
         )
+    }
+
+    componentDidMount(): void {
+        window.addEventListener('scroll', this.onScroll);
+    }
+
+    componentWillUnmount(): void {
+        window.addEventListener('scroll', this.onScroll);
+    }
+
+    onScroll(event: Event) {
+        if (!this.hasScrolled && window.scrollY > 200
+            && this.educationRef && this.workRef && this.educationRef.current && this.workRef.current) {
+            this.hasScrolled = true;
+            this.educationRef.current.classList.add("Visible");
+            this.workRef.current.classList.add("Visible");
+        }
     }
 }
