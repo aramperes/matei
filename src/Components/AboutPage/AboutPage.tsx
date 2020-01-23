@@ -99,14 +99,14 @@ export default class AboutPage extends React.Component<any> {
     }
 
     onScroll(event: Event) {
-        if (!this.hasScrolled && window.scrollY > 150
+        if (!this.hasScrolled && window.pageYOffset > 150
             && this.educationRef && this.workRef && this.educationRef.current && this.workRef.current) {
             this.hasScrolled = true;
             this.educationRef.current.classList.add("Visible");
             this.workRef.current.classList.add("Visible");
         }
         if (this.gradient && this.gradient.current) {
-            const blueness = Math.min(100, window.scrollY / 5);
+            const blueness = Math.min(100, window.pageYOffset / 5);
             this.gradient.current.style.background = "linear-gradient(170deg, #8AB4CC " + blueness + "%, rgba(206, 103, 255, 0.5) 100%)";
             this.gradient.current.style.backgroundSize = "92% 95%";
             this.gradient.current.style.backgroundRepeat = "no-repeat";
