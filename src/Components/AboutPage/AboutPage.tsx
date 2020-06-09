@@ -34,7 +34,7 @@ export default class AboutPage extends React.Component<any> {
                                 soccer, and soccer.
                             </div>
                             <div className={"IntroSubtext"}>
-                                Born in Montreal, I am currently studying management at Concordia University and
+                                Born in Montreal, I am currently studying graphic design at UQAM and
                                 improving my web design skills. Heavily influenced by music and technology, I aim to
                                 create content that influences daily life.
                             </div>
@@ -46,6 +46,13 @@ export default class AboutPage extends React.Component<any> {
                         <div className={"Section"} ref={this.educationRef}>
                             <div className={"Title"}>Education</div>
                             <div className={"Item"}>
+                                <div className={"Date"}>2020 - 2024</div>
+                                <div className={"Name"}>Universit&eacute; du Qu&eacute;bec &agrave;  Montr&eacute;al</div>
+                                <div className={"Description"}>
+                                    Graphic Design<br/>Bachelor's Degree
+                                </div>
+                            </div>
+                            <div className={"Item"}>         
                                 <div className={"Date"}>2017 - 2019</div>
                                 <div className={"Name"}>Coll&eacute;gial International Sainte-Anne</div>
                                 <div className={"Description"}>
