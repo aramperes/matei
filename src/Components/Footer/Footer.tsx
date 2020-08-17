@@ -13,10 +13,10 @@ export default class Footer extends React.Component {
                         <div className={"Email"}><a href={"mailto:matei.cheong@wavy.fm"}>matei.cheong@wavy.fm</a></div>
                     </div>
                     <div className={"SocialParent"}>
-                        <a href={"https://twitter.com/MattHeyMc"} className={"Twitter"} target={"_blank"}>
+                        <a href={"https://twitter.com/MattHeyMc"} className={"Twitter"} target={"_blank"} title={"Twitter"}>
                             <img src={Twitter} alt={"twitter"}/>
                         </a>
-                        <a href={"https://dribbble.com/MattHey"} className={"Dribble"} target={"_blank"}>
+                        <a href={"https://dribbble.com/mateicheong"} className={"Dribble"} target={"_blank"} title={"Dribbble"}>
                             <img src={Dribble} alt={"dribbble"}/>
                         </a>
                     </div>
