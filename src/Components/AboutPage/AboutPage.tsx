@@ -71,7 +71,7 @@ export default class AboutPage extends React.Component<any> {
                             <div className={"Title"}>Work Experience</div>
                             <div className={"Item"}>
                                 <div className={"Date"}>2018 - Present</div>
-                                <div className={"Name"}>wavy media</div>
+                                <div className={"Name"}>Wavy Labs</div>
                                 <div className={"Description"}>
                                     Co-Founder - UI / UX Design Lead
                                 </div>
