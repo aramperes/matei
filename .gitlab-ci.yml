@@ -12,7 +12,7 @@ stages:
 
 frontend:build:
   stage: build
-  image: node:8-alpine
+  image: node:14-alpine
   script:
     - yarn install --dev
     - INLINE_RUNTIME_CHUNK=false yarn build
