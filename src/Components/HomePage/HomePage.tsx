@@ -51,6 +51,7 @@ export default class HomePage extends React.Component<any> {
                 </div>
                 <div className={"WavyParent"}>
                     <div className={"WavyGroup"}>
+                        {/* eslint-disable-next-line react/jsx-no-target-blank */}
                         <a href={"https://wavy.fm"} target={"_blank"}>
                             <img src={WavyScreenshot} className={"WavyScreenshot"} alt={"wavy.fm homepage"}
                                  ref={this.screenshotGradient}/>
@@ -62,6 +63,7 @@ export default class HomePage extends React.Component<any> {
                                 <div className={"LineBreak"}/>
                                 <span>Track music and share with friends.</span>
                             </div>
+                            {/* eslint-disable-next-line react/jsx-no-target-blank */}
                             <a href={"https://wavy.fm"} target={"_blank"}>
                                 <img src={Arrow} alt={""} className={"Arrow"}/>
                             </a>
