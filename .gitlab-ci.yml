@@ -33,7 +33,7 @@ frontend:release:
 
 frontend:deploy:
   stage: deploy
-  image: lwolf/helm-kubectl-docker:v1.15.4-v2.14.3
+  image: wavyfm/helm-kubectl-docker:v1.15.5-v2.17.0
   script:
     - mkdir -p ${KUBECONFIG_PARENT}
     - echo ${K8S_CLUSTER_CONFIG} | base64 -d > ${KUBECONFIG}
