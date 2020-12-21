@@ -33,10 +33,10 @@ frontend:release:
 
 frontend:deploy:
   stage: deploy
-  image: wavyfm/helm-kubectl-docker:v1.16.15-v2.17.0
+  image: wavyfm/helm-kubectl-docker:v1.16.15-v3.4.2
   script:
     - mkdir -p ${KUBECONFIG_PARENT}
     - echo ${K8S_CLUSTER_CONFIG} | base64 -d > ${KUBECONFIG}
 
     # Deploy using helm chart
-    - helm upgrade --install --force --namespace ${DEPLOY_NAMESPACE} --set image.name=${IMAGE},image.tag=${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA} matei ./chart
+    - helm upgrade --install --namespace ${DEPLOY_NAMESPACE} --set image.name=${IMAGE},image.tag=${CI_COMMIT_REF_SLUG}-${CI_COMMIT_SHORT_SHA} matei ./chart
